@@ -1,0 +1,35 @@
+@import "tailwindcss";
+ 
+@source "../views";
+ 
+@theme {
+  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --color-ink: #070b1a;
+  --color-panel: #0d1330;
+}
+ 
+@layer base {
+  body { @apply bg-ink text-slate-300 antialiased; }
+  [x-cloak] { display: none !important; }
+}
+ 
+.grid-bg {
+  background-image:
+    linear-gradient(rgb(255 255 255 / .05) 1px, transparent 1px),
+    linear-gradient(90deg, rgb(255 255 255 / .05) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+.hero-float { animation: hero-float 4s ease-in-out infinite; }
+@keyframes hero-float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero-float { animation: none; }
+}
+.text-grad { @apply bg-linear-to-r from-cyan-400 via-blue-400 to-purple-400 bg-clip-text text-transparent; }
+.btn-grad { @apply inline-flex items-center justify-center gap-2 rounded-xl bg-linear-to-r from-cyan-500 to-purple-500 px-5 py-3 text-sm font-semibold text-white transition hover:opacity-90; }
+.btn-ghost { @apply inline-flex items-center justify-center gap-2 rounded-xl border border-white/10 bg-white/5 px-5 py-3 text-sm font-medium text-slate-200 transition hover:bg-white/10; }
+.card { @apply rounded-2xl border border-white/10 bg-white/5 p-5 backdrop-blur; }
+.chip { @apply inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs font-medium text-slate-300; }
+.input { @apply w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-white placeholder:text-slate-500 focus:border-cyan-400 focus:outline-none; }
