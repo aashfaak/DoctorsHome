@@ -144,6 +144,6 @@ A home healthcare booking website built with Laravel. Patients can browse doctor
 
 ## Author
 
-Mohammad Ashfak
-ID: 0222220005101179
-Dept. of Computer Science and Engineering, Premier University Chittagong.
+- Mohammad Ashfak
+- ID: 0222220005101179
+- Dept. of Computer Science and Engineering, Premier University Chittagong.
