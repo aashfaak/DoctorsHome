@@ -11,7 +11,7 @@
 
     <div class="mt-10 grid gap-6 md:grid-cols-2">
         <div class="space-y-4">
-            @foreach ([['lucide-phone', 'Phone', '+880 1XXX-XXXXXX'], ['lucide-mail', 'Email', 'doctorshome@gmail.com'], ['lucide-map-pin', 'Address', 'Chattogram, Bangladesh']] as [$icon, $label, $value])
+            @foreach ([['lucide-phone', 'Phone', '+880 1884 148505'], ['lucide-mail', 'Email', 'doctorshome@gmail.com'], ['lucide-map-pin', 'Address', 'Chattogram, Bangladesh']] as [$icon, $label, $value])
                 <div class="card flex items-center gap-4">
                     <x-dynamic-component :component="$icon" class="h-5 w-5 text-cyan-400" />
                     <div>
