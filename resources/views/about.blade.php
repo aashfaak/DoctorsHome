@@ -12,7 +12,7 @@
     </p>
 
     <div class="mt-10 grid gap-4 sm:grid-cols-3">
-        @foreach ([['500+', 'Expert doctors'], ['50K+', 'Happy patients'], ['24/7', 'Support']] as [$n, $l])
+        @foreach ([['50+', 'Expert doctors'], ['5k+', 'Happy patients'], ['24/7', 'Support']] as [$n, $l])
             <div class="card">
                 <p class="text-3xl font-bold text-cyan-400">{{ $n }}</p>
                 <p class="mt-1 text-sm text-slate-400">{{ $l }}</p>
